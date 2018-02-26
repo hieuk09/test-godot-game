@@ -1,12 +1,12 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://tileset.res" type="TileSet" id=1]
+[ext_resource path="res://control.gd" type="Script" id=2]
 
 [node name="world" type="Node2D" index="0"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
-position = Vector2( 0, -0.25 )
 mode = 0
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 50, 50 )
@@ -24,7 +24,8 @@ collision_mask = 1
 occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 65536, 0, 0, 65541, 0, 0, 131072, 0, 0, 131077, 0, 0, 196608, 0, 0, 196613, 0, 0, 262144, 0, 0, 262149, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0 )
-_sections_unfolded = [ "Cell" ]
+script = ExtResource( 2 )
+_sections_unfolded = [ "Cell", "Transform" ]
 
 [node name="score_label" type="RichTextLabel" parent="." index="1"]
 
@@ -33,9 +34,8 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 300.0
-margin_top = 1.0
-margin_right = 347.0
-margin_bottom = 17.0
+margin_right = 350.0
+margin_bottom = 15.0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true
@@ -64,8 +64,8 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 300.0
 margin_top = 50.0
-margin_right = 349.0
-margin_bottom = 67.0
+margin_right = 350.0
+margin_bottom = 65.0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true
@@ -94,7 +94,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 450.0
 margin_right = 520.0
-margin_bottom = 16.0
+margin_bottom = 15.0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true
@@ -122,9 +122,9 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 450.0
-margin_top = 40.0
+margin_top = 50.0
 margin_right = 520.0
-margin_bottom = 56.0
+margin_bottom = 65.0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true

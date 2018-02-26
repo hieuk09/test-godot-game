@@ -14,9 +14,9 @@ config/name="Kingdom"
 run/main_scene="res://main.tscn"
 config/icon="res://icon.png"
 
-[debug]
+[autoload]
 
-settings/stdout/print_fps=false
+global="*res://global.gd"
 
 [rendering]
 
