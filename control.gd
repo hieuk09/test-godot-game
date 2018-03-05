@@ -5,8 +5,8 @@ func _ready():
 	var index = 0
 	
 	for position in positions:
-		var x = index % 4 + 1 + 1
-		var y = index / 4 + 1 + 1
+		var x = index % 4 + 1
+		var y = index / 4 + 1
 		
 		if position != 0:
 			set_cell(x, y, 0)
