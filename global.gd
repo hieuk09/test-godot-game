@@ -11,4 +11,6 @@ var positions = [
 ]
 
 func _ready():
-	pass
+	var x = randi() % 4
+	var y = randi() % 4
+	positions[x * 4 + y] = 1
