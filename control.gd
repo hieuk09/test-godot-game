@@ -9,7 +9,7 @@ func _ready():
 		var y = index / 4 + 1
 		
 		if position != 0:
-			set_cell(x, y, 0)
+			set_cell(x, y, 1)
 		
 		index += 1
 
